@@ -35,7 +35,7 @@
     </div>
     <footer class="text-center">
         <hr>
-        2022 &copy; Jugueteria
+        2022 &copy; Tienda
     </footer>
     <script src="js/bootstrap.js"></script>
 </body>

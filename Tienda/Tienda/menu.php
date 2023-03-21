@@ -19,9 +19,9 @@
                 <a class="dropdown-item" href="registrarDatos.php">Registrar Prendas</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="Mujer.php">Mujer</a>
-                <a class="dropdown-item" href="muñecas.php">Hombre</a>
-                <a class="dropdown-item" href="figuras de accion.php">Accersorios</a>
-                <a class="dropdown-item" href="juegos de mesa.php">Intercambio</a>
+                <a class="dropdown-item" href="Hombres.php">Hombre</a>
+                <a class="dropdown-item" href="Accesorios.php">Accersorios</a>
+                <a class="dropdown-item" href="Intercambio.php">Intercambio</a>
               </div>
             </li>
           </ul>
