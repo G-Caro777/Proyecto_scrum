@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mujer</title>
+    <title>Hombre</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
 </head>
@@ -16,7 +16,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-3">
                 <div class="col">
     <div class="card h-100">
-      <img src="pantalon.jpg" class="card-img-top" alt="..."><br>
+      <img src="pantalonhombres.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body">
         <h5 class="card-title">Jeans</h5>
         <a href="pantalones.php" class="btn btn-secondary"> Entrar</a>
@@ -25,45 +25,45 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="falda.jpg" class="card-img-top" alt="..."><br>
+      <img src="camisas.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body">
-        <h5 class="card-title">Faldas</h5>
+        <h5 class="card-title">Camisas</h5>
         <a href="comprar lego 1.php" class="btn btn-secondary"> Entrar</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="vestido.jpg" class="card-img-top" alt="..."><br>
+      <img src="playeras.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body">
-        <h5 class="card-title">Vestidos</h5>
+        <h5 class="card-title">Playeras</h5>
         <a href="comprar lego 1.php" class="btn btn-secondary"> Entrar</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="blusa.jpg" class="card-img-top" alt="..."><br>
+      <img src="shorthombre.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body"><br>
-        <h5 class="card-title">Blusas</h5>
+        <h5 class="card-title">Shorts</h5>
         <a href="comprarlego2.php" class="btn btn-secondary"> Entrar</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="zapatos.jpg" class="card-img-top" alt="..."><br>
+      <img src="sudaderahombre.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body"><br>
-        <h5 class="card-title">Zapatos</h5>
+        <h5 class="card-title">Sudaderas</h5>
         <a href="comprarlego3.php" class="btn btn-secondary"> Entrar</a>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="sudadera.jpg" class="card-img-top" alt="..."><br>
+      <img src="zapatoshombre.jpg" class="card-img-top" alt="..."><br>
       <div class="card-body"><br>
-        <h5 class="card-title">Sudaderas</h5>
+        <h5 class="card-title">Zapatos</h5>
         <a href="comprarlego3.php" class="btn btn-secondary"> Entrar</a>
       </div>
     </div>
@@ -81,3 +81,6 @@
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
+ 
+ 
+ 

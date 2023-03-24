@@ -30,16 +30,6 @@
                         <label for="">Nombre:</label>
                         <input type="text" class="form-control" name="nombre" placeholder="Teclea el nombre">
                     </div>
-
-                    <div class="form-group">
-                        <label for="">Apellidos:</label>
-                        <input type="text" class="form-control" name="apellidos" placeholder="Teclea los apellidos">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Edad:</label>
-                        <input type="number" class="form-control" name="edad" placeholder="Teclea la edad">
-                    </div><br>
                     
                     <div class="col-12">
                     <a href="registro.php" class="btn btn-primary">Continuar</a>
@@ -52,7 +42,7 @@
 </form>
 <footer class="text-center">
         <hr>
-        2022 &copy; Jugueteria
+        2022 &copy; Tienda
     </footer>
     <script src="js/bootstrap.js"></script>
 </body>
