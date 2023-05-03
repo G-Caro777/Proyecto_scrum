@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-04-2023 a las 04:38:54
+-- Tiempo de generación: 03-05-2023 a las 06:40:40
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -379,16 +379,47 @@ ALTER TABLE `usuarios`
 --
 
 --
+-- Filtros para la tabla `direcciones`
+--
+ALTER TABLE `direcciones`
+  ADD CONSTRAINT `direccion_usuario` FOREIGN KEY (`id_direcciones`) REFERENCES `usuarios` (`direccion_id`);
+
+--
 -- Filtros para la tabla `favoritos`
 --
 ALTER TABLE `favoritos`
-  ADD CONSTRAINT `favoritos_prenda` FOREIGN KEY (`prenda_id`) REFERENCES `prendas` (`id_prenda`);
+  ADD CONSTRAINT `favoritos_prenda` FOREIGN KEY (`prenda_id`) REFERENCES `prendas` (`id_prenda`),
+  ADD CONSTRAINT `usuarios_favoritos` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
 
 --
 -- Filtros para la tabla `prendas`
 --
 ALTER TABLE `prendas`
-  ADD CONSTRAINT `categoria_de_prenda` FOREIGN KEY (`categoria_id`) REFERENCES `categoria` (`id_categoria`);
+  ADD CONSTRAINT `categoria_de_prenda` FOREIGN KEY (`categoria_id`) REFERENCES `categoria` (`id_categoria`),
+  ADD CONSTRAINT `prenda1` FOREIGN KEY (`id_prenda`) REFERENCES `solicitudes` (`prenda_id`),
+  ADD CONSTRAINT `prenda2` FOREIGN KEY (`id_prenda`) REFERENCES `solicitudes` (`prenda2_id`),
+  ADD CONSTRAINT `tipo_transaccion` FOREIGN KEY (`tipo_transaccion_id`) REFERENCES `tipo_de_transaccion` (`id_tipo_de_transaccion`);
+
+--
+-- Filtros para la tabla `solicitudes`
+--
+ALTER TABLE `solicitudes`
+  ADD CONSTRAINT `usuarios_solicitud` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
+
+--
+-- Filtros para la tabla `transaccion`
+--
+ALTER TABLE `transaccion`
+  ADD CONSTRAINT `tipo_de_transaccion` FOREIGN KEY (`id_transaccion`) REFERENCES `tipo_de_transaccion` (`id_tipo_de_transaccion`),
+  ADD CONSTRAINT `transaccion_tipo_de_pago` FOREIGN KEY (`tipo_de_pago_id`) REFERENCES `tipo_de_pago` (`id_tipo_de_pago`),
+  ADD CONSTRAINT `transaccion_usuarios` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
+
+--
+-- Filtros para la tabla `transaccion_prenda`
+--
+ALTER TABLE `transaccion_prenda`
+  ADD CONSTRAINT `transaccion_prenda` FOREIGN KEY (`prenda_id`) REFERENCES `prendas` (`id_prenda`),
+  ADD CONSTRAINT `transacion` FOREIGN KEY (`transaccion_id`) REFERENCES `transaccion` (`id_transaccion`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
