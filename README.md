@@ -6,5 +6,5 @@ Proposito:
 Metodo de negocio:
 -Por medio de suscipciones y comisiones.
 
-Link del Prototipo en Mockplus 
+Link del Prototipo en Mockplus :
 https://rp.mockplus.com/run/QmL8rxwqWn/_NBoS4hSt8?cps=expand&rps=expand&nav=1&ha=0&la=0&fc=0&out=1&rt=1
